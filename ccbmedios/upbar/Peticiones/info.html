@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Copiar correo ccbmedios@ccbenv.edu.co</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    img{
+        height:0.1px;
+    }
+    .email-link {
+    color: blue;
+    overflow-x: hidden;
+    border: none;
+    font-size: 3.3vh;
+    background: white;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    white-space: pre-wrap;
+    text-align: justify;
+    text-align-last: left;
+    cursor: pointer;
+    }
+    .email-link:hover {
+        text-decoration: underline;
+    }
+    .gmail-logo {
+    width: 500px;
+    height: auto;
+    transform: translate(20vw, -22vh);
+}
+
+.label1 {
+    overflow-x: hidden;
+    border: none;
+    font-size: 3.3vh;
+    background: white;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 600;
+    white-space: pre-wrap;
+    text-align: justify;
+    text-align-last: left;
+    width: 35vw;
+    transform: translate(-10vw, 10vh);
+}
+</style>
+<script>
+function copyToClipboard() {
+    const email = "ccbmedios@ccbenv.edu.co";
+    navigator.clipboard.writeText(email).then(function() {
+        console.log('Correo copiado: ' + email);
+        alert('Correo copiado: ' + email);
+    }, function(err) {
+        console.error('Error al copiar el correo: ', err);
+        alert('Error al copiar el correo. Por favor, copie manualmente: ' + email);
+    });
+}
+</script>
+</head>
+<body>
+
+
+<div class="label1">
+CCB Medios es un programa de los estudiantes para los estudiantes aceptamos peticiones para agregar tanto en nuestros medios escritos como fotográficos o videográficos. Para comunicarte con nosotros, las solicitudes serán evaluadas y aceptadas al correo de <a class="email-link" onclick="copyToClipboard()">ccbmedios@ccbenv.edu.co</a>
+</div>
+<img class="gmail-logo" src="Gmail.png" alt="Gmail Logo">
+<div style="overflow-x: hidden; border: none; font-size: 3.3vh; background: white; font-family: 'Gothic A1', sans-serif; font-weight: 600; white-space: pre-wrap; text-align: justify; text-align-last: left; width: 60vw;">
+<center>                       🌟 Gracias por ser parte de nuestra comunidad 🌟</center> 
+</div>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+            if(disclaimer) {
+                disclaimer.remove();
+            }
+        });
+    </script>
+</body>
+</html>

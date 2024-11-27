@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <style>
+  body {
+        zoom: 65%
+    } /* Establece el nivel de zoom al 60% */
+
+  div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"] {
+    /* Your styles here */
+    /* For example, change the background color */
+    height:0px;
+}
+  img{
+      height:0px;
+  }
+  
+  .timage {
+            position: absolute;
+            right: 0;
+            top: 100vh;
+            height: 83vh; 
+            width: 73vw;
+            max-width: 120%;
+            transform: translate(25vw, 23vh);
+        }
+  
+  .img-responsive {
+    transform: translate(30vw, 30vh);
+}
+  
+.label1 {
+    
+}
+
+/* Estilo para el borde interno */
+
+  
+  .carousel-indicators li {
+  position: relative;
+}
+
+.carousel-indicators li.active .text {
+  display: block;
+}
+
+
+  
+.carousel-control.left, .carousel-control.right {
+    background: transparent !important;
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    top: 65%;
+    transform: translateX(0vw);
+}
+.carousel-control.right {
+    transform: translateX(-5vw);
+}
+    .carousel-control img {
+      width: 50px; /* Ancho de las imágenes de flechas */
+      height: 50px; /* Alto de las imágenes de flechas */
+      transform: translateY(-50%);
+    }
+    
+   
+   .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    transform: translateY(25%);
+}
+   
+   .carousel-indicators {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 15;
+    width: 60%;
+    transform: translateY(700%);
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
+}
+
+  body {
+    zoom: 100%; /* Establece el nivel de zoom al 60% */
+  }
+.carousel-control img {
+    width: 50px;
+    height: 50px;
+    transform: translate(200%, -0%);
+}
+
+.background-image {
+        position: absolute;
+        top: 0vh;
+        left: 2vw;
+        width: 71vw;
+        height: 66vh;
+        z-index: -1;
+}
+
+.carousel {
+    position: relative;
+    transform: translate(-25vw, -10.6vh);
+}
+.text {
+    display: none;
+    position: absolute;
+    right: -10500%;
+    transform: translate(13.6vw, -43vh);
+    background: white;
+}
+
+
+.label2{
+    transform: translateY(-150%);
+}
+
+.label3{
+    width: 44vw; transform: translate(-25vw, -43vh); font-size: 3.3vh; border: none; background: white; font-family: 'Gothic A1', sans-serif; font-weight: 600; white-space: pre-wrap; text-align: justify; text-align-last: right;
+}
+
+iframe {
+    overflow-clip-margin: content-box !important;
+    overflow: clip !important;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+    width: 50vw;
+    height: 58vh;
+}
+
+@media (max-width: 1366px) {
+  .background-image {
+    position: absolute;
+    top: 0vh;
+    left: 2vw;
+    width: 75vw;
+    height: 90vh;
+    z-index: -1;
+}
+    .carousel {
+        position: relative;
+        transform: translate(-25vw, -4.6vh);
+    }
+    
+.carousel-control.left, .carousel-control.right {
+    background: transparent !important;
+    color: black !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    top: 65%;
+    transform: translateX(9vw);
+}
+
+.carousel-control.right {
+    transform: translateX(-15vw);
+}
+
+
+    .text {
+        display: none;
+        position: absolute;
+        right: -10500%;
+        transform: translate(-5.6vw, -43vh);
+        background: white;
+    }
+    
+    .img-responsive{
+        max-width: 60%;
+        transform: translate(50vw, 43vh);
+    }
+    
+    .timage{
+       
+    }
+    
+    .label3 {
+        transform: translate(-10vw, -20vh);
+    }
+}
+
+   
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .video-container {
+  text-align: center; /* Center the content horizontally */
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+}
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+<img src="border.png" class="background-image">
+  <div id="myCarousel" class="carousel" style="margin-bottom: 50px;">
+    <!-- Indicators -->
+   <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active">
+    <div class="text">
+<div style="overflow-x: hidden; border: none; font-size: 3.3vh; background: white; font-family: 'Gothic A1', sans-serif; font-weight: 600; white-space: pre-wrap; text-align: justify; text-align-last: left;" class="label1">
+¡¡Esta es la primera edición CCB TV
+del proyecto de CCB Medios. 
+En esta hay varios temas incluidos como:
+la colección de libros del Rector y su 
+libro elegido, unas palabras de nuestro
+personero, las experiencias en el colegio
+de uno de nuestros docentes y más!!
+</div>
+    </div>
+</li>
+  <li data-target="#myCarousel" data-slide-to="1"><div class="text">
+<div style="overflow-x: hidden; border: none; font-size: 3.3vh; background: white; transform: translate(-2vw, 5vh); font-family: 'Gothic A1', sans-serif; font-weight: 600; white-space: pre-wrap; text-align: justify; text-align-last: left;" class="label2">
+!!En esta ocasión esta es una edición 
+especial en nuestro proyecto¡¡ Toca 
+un poco de lo que estará incluido a 
+lo largo de la semana y tenemos
+a un invitado especial, !!Pacho¡¡
+</div>
+      </div></li>
+  <!-- Elimina el tercer elemento -->
+</ol>
+
+<div class="carousel-inner">
+  <div class="item active">
+    <div class="video-container">
+      <iframe src="https://drive.google.com/file/d/1CeOyc1t3NE20E4RkeWRXiSoQtbghK9s_/preview"></iframe>
+    </div>
+  </div>
+  <div class="item">
+    <div class="video-container">
+      <iframe class="video" src="https://drive.google.com/file/d/1vwUOccTfKFzthsaC1aX3NaM2nBJeYZ6c/preview"></iframe>
+    </div>
+  </div>
+  <!-- Elimina el tercer elemento -->
+</div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <img src="Flecha_izquierda.png" alt="" style="transform: translateX(-1vw);"></a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <img src="Flecha_derecha.png" alt="">
+    </a>
+  </div>
+    <img src="timage.png" alt="Image Description" class="img-responsive">
+<div class="label3">
+    CCB TV es la sección dedicada a todo el contenido
+    videográfico de CCB Medios, muchos de los proyectos
+    aquí son peticiones, otros son las ediciones del proyecto
+    o especiales. Esta sección siempre acepta nuevas
+    noticias y como creadores de contenido estamos
+    dispuestos a aceptar novedades de los estudiantes para
+    agregar a nuestras ediciones.
+</div>
+
+  </div>
+
+<script>
+$('#myCarousel').carousel({
+    interval: false // Desactiva el desplazamiento automático
+  });
+
+  $('#myCarousel').on('slid.bs.carousel', function () {
+    $('.video').each(function() {
+      this.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+    });
+  });
+</script>
+<script>
+window.onload = function() {
+    var screenWidth = screen.width;
+    var screenHeight = screen.height;
+    
+    if (screenWidth <= 0 && screenHeight <= 0) {
+        document.body.style.zoom = "80%";
+    } else {
+        document.body.style.zoom = "80%";
+    }
+};
+    </script>
+</body>
+
+</html>

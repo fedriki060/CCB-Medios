@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link href='https://fonts.googleapis.com/css?family=Gothic A1' rel='stylesheet'>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Conjunto de Cuadrados Verdes</title>
+<style>
+div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"] {
+    height:0px;
+}
+    .contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .item {
+        margin: 10px;
+        text-align: center;
+        flex-grow: 1;
+        cursor: pointer;
+    }
+    .cuadrado {
+        width: 325px;
+        height: 200px;
+        background-color: green;
+        color: white;
+        line-height: 200px;
+        position: relative;
+    }
+    .descripcion {
+        transform:translateX(1.2vw);
+        width: 200px;
+        text-align: left;
+        position: relative;
+    }
+    .descripcion::before {
+        content: "";
+        width: 1em;
+        height: 1em;
+        background-color: green;
+        display: inline-block;
+        position: absolute;
+        left: -1em;
+        top: 50%;
+        transform: translateY(-60%);
+    }
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
+    .scroll-container::-webkit-scrollbar {
+        width: 10px;
+    }
+    .scroll-container::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    .scroll-container::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+    }
+    .scroll-container::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+    p {
+        font-family: 'Gothic A1';
+    }
+    h2 {
+        font-family: 'Gothic A1';
+    }
+    .cuadrado img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+</head>
+<body>
+<div class="scroll-container">
+<div class="contenedor">
+    <div class="item">
+        <a onclick="window.top.location.href = 'http://ccbmedios.great-site.net/ccbmedios/secciones-times/Portugués/publicaciones/dia-mundial-da-lingua-portuguesa.html';">
+        <div class="cuadrado">
+            <img src="/ccbmedios/secciones-times/Principal/Publicaciones/imagenes-publicaciones/dia-do-idioma.png" alt="Imagen de Basketball">
+        </div>
+        <div class="descripcion">
+            <p>5 de Maio de 2024, Dia Mundial da Língua Portuguesa...</p>
+        </div>
+        </a>
+    </div>
+    
+</div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+        if (disclaimer) {
+            disclaimer.remove();
+        }
+    });
+</script>
+</body>
+</html>

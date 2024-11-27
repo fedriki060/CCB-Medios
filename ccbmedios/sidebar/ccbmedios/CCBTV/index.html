@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CCB Medios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="loguito.png" type="image/png">
+
+  <link rel="stylesheet" href="styles.css">
+ <style>
+ body {
+    zoom: 100%; /* Establece el nivel de zoom al 60% */
+  }
+ div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"] {
+    /* Your styles here */
+    /* For example, change the background color */
+    height:0px;
+}
+iframe {
+    transform: translateX(0vw);
+    margin-top: 5vh;
+    left: -0px;
+    position: absolute;
+    width: 91.5vw;
+    height: 87vh;
+    border-style: none;
+}
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+    body{
+        zoom: 67%;
+    }
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 15px /* Ancla el item para posicionar los textos relativamente */;
+}
+.sidebar-menubtn {
+    position: absolute;
+    left: 15%;
+    top: -65%;
+    transform: translateY(-50%);
+    font-size: 450%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+iframe {
+        transform: translateX(0vw);
+        margin-top: 5vh;
+        left: -0px;
+        position: absolute;
+        width: 138vw;
+        height: 127vh;
+        border-style: none;
+    }
+}
+</style>
+
+</head>
+<body style="background-color: white;">
+  
+
+  <div class="container">
+      <a  href="http://ccbmedios.great-site.net/ccbmedios/upbar/Proyecto/index.html" class = proyecto>Proyecto</a>
+      <a  href="http://ccbmedios.great-site.net/ccbmedios/upbar/Equipo/index.html" class = equipo>Equipo</a>
+      <a  href="http://ccbmedios.great-site.net/ccbmedios/upbar/Historia/index.html" class = historia>Historia</a>
+      <a  href="http://ccbmedios.great-site.net/ccbmedios/upbar/Peticiones/index.html" class = contacto>Peticiones</a>
+    
+    
+    <a href="http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/principal"><img src="logo.png" alt="Descripción de la imagen" class="logo"></a>
+    
+
+    <header>
+      </header>
+    <div class="barra"></div>
+
+    <div class="content">
+      <iframe src="infos.html" scrolling="auto"></iframe>
+
+
+     
+    </div>
+    <div class="sidebar" id="sidebar">
+      <!-- Contenido de la barra lateral -->
+      <h2></h2>
+      <div class="sidebar-content">
+      <div class="sidebar-images">
+
+        <div class="sidebar-item">
+            <button class="sidebar-menubtn" onclick="toggleSidebar()">☰</button>
+            <a href="http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/CCBTV/index.html"><img src="TV.png" alt="Icono 1" width="100px" style=" filter: brightness(70%) contrast(10%);"> </a>
+            <a href="http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/CCBTV/index.html" class="sidebar-text" style="color:#414040;">CCB TV</a>
+          </div>
+        <div class="sidebar-item">
+           <a href="http://ccbmedios.great-site.net/ccbmedios/secciones-times/Literatura/index.html"> <img src="Lteratura.png" alt="Imagen 2" width="100px"></a>
+            <a href="http://ccbmedios.great-site.net/ccbmedios/secciones-times/Literatura/index.html"  class=sidebar-text>CCB Literatura</a>
+          </div>
+        <div class="sidebar-item">
+           <a href="http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/CCBTimes/index.html"> <img src="Podcast.png" alt="Imagen 4" width="90px"></a>
+            <a href="http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/CCBTimes/index.html" class="sidebar-text">CCB Times</a>
+          </div>    
+    </div>
+      </div>
+      </div>
+    </div>
+          <div class="sidebar-item">
+              <div class="sidebar-bar"></div>
+    </div>
+
+  <script src="script.js"></script>
+
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+</script>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+            if(disclaimer) {
+                disclaimer.remove();
+            }
+        });
+    </script>
+
+</body>
+</html>

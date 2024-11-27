@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upbar Example</title>
+    <style>
+    div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"] {
+    /* Your styles here */
+    /* For example, change the background color */
+    height:0px;
+}
+    img{
+        0px;
+    }
+        /* Style for the upbar */
+        .upbar {
+            background-color: #ffff;
+            overflow: hidden; /* Clearfix */
+        }
+
+        /* Style for the individual sections */
+        .upbar a {
+            float: left;
+            display: block;
+            color: green;
+            text-align: center;
+            padding: 20px 8px; /* Increased top padding */
+            text-decoration: none;
+            font-size: 25px; /* Reduced font size */
+            line-height: 24px; /* Reduced line-height */
+            cursor: pointer; /* Add cursor property here */
+        }
+
+        /* Change the color of links on hover */
+        .upbar a:hover {
+            background-color: green;
+            color: white;
+        }
+
+        /* Style for the dots */
+        .upbar a.dot {
+            color: gray;
+            font-size: 50px; /* Reduced font size */
+            line-height: 34px; /* Reduced line-height */
+            margin: 0 4px; /* Reduced margin for spacing */
+            cursor: default; /* Default cursor for dots */
+            transform: translateY(-2px);
+        }
+
+        /* Override hover behavior for the dots */
+        .upbar a.dot:hover {
+            background-color: transparent;
+            color: gray;
+        }
+
+        /* Style for the upper bar */
+        .upper-bar {
+            background-color: gray;
+            height: 5px; /* Increased height */
+            transform: translateY(-1px);
+        }
+
+        /* Style for the lower bar */
+    .lower-bar {
+        background-color: gray;
+        height: 5px;
+        margin-top: -9px;
+}
+
+        /* Clearfix to properly wrap floated elements */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media screen and (max-width: 1360px) {
+        .upbar a {
+            float: left;
+            display: block;
+            color: green;
+            text-align: center;
+            padding: 20px 8px; /* Increased top padding */
+            text-decoration: none;
+            font-size: 16px; /* Reduced font size */
+            line-height: 34px; /* Reduced line-height */
+            cursor: pointer; /* Add cursor property here */
+        }
+        .upbar a.dot {
+            color: gray;
+            font-size: 30px; /* Reduced font size */
+            line-height: 34px; /* Reduced line-height */
+            margin: 0 4px; /* Reduced margin for spacing */
+            cursor: default; /* Default cursor for dots */
+        }
+        }
+    }
+    </style>
+</head>
+<body>
+
+<!-- Upper bar -->
+<div class="upper-bar"></div>
+
+<!-- Upbar section -->
+<div class="upbar clearfix"> <!-- Add clearfix class here -->
+    <a onclick="window.top.location.href = 'http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/CCB0Times/CCBTimes/index.html'" class = "dot" style="font-size:21px; color:white; background-color: gray; cursor: pointer; height: 25px;">Secciones</a>
+    <a class="dot">・ </a>
+     <a onclick="window.top.location.href = 'http://ccbmedios.great-site.net/ccbmedios/secciones-times/Deportes/index.html'">Deportes</a>
+    <a class="dot">・ </a>
+       <a onclick="window.top.location.href = 'http://ccbmedios.great-site.net/ccbmedios/secciones-times/Gastronomia/index.html'">Gastronomía</a>
+    <a class="dot">・ </a>
+     <a onclick="window.top.location.href = 'http://ccbmedios.great-site.net/ccbmedios/secciones-times/Novedades/index.html'">Novedades</a>
+    <a class="dot">・ </a>
+    <a onclick="window.top.location.href = 'http://ccbmedios.great-site.net/ccbmedios/secciones-times/Mascotas/index.html'">Mascotas CCB</a>
+        <a class="dot">・ </a>
+
+    <a onclick="window.top.location.href = 'http://ccbmedios.great-site.net/ccbmedios/secciones-times/Reseñas/index.html'">Reseñas</a>
+    <a class="dot">・ </a>
+        <a onclick="window.top.location.href = 'http://ccbmedios.great-site.net/ccbmedios/secciones-times/Literatura/index.html'">Literatura</a>
+    
+   
+    <a class="dot">・ </a>
+    <a onclick="window.top.location.href = 'http://ccbmedios.great-site.net/ccbmedios/secciones-times/Portugues/index.html'">Portugués</a>
+
+
+
+</div>
+
+<!-- Lower bar -->
+<div class="lower-bar"></div>
+
+<!-- Your content goes here -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+            if(disclaimer) {
+                disclaimer.remove();
+            }
+        });
+    </script>
+</body>
+</html>

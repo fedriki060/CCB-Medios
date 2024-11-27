@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Página Principal</title>
+<style>
+    .contenedor {
+        display: flex;
+    }
+    iframe#cuadrados {
+        border: none;
+        width: 100%; /* Cubre el 80% de la ventana */
+        height: 100vh;
+    }
+    iframe#rectangulo {
+        border: none;
+        width: 20%; /* Cubre el 20% restante de la ventana */
+        height: 80vh;
+        overflow: hidden;
+    }
+    iframe#principal {
+        border: none;
+        width: 100%; /* Cubre el 20% restante de la ventana */
+        height: 92vh;
+        overflow: hidden;
+        transform: translateY(-3vh);
+    }
+     @media screen and (max-width: 1400px) {
+      iframe#principal {
+        border: none;
+        width: 100%; /* Cubre el 20% restante de la ventana */
+        height: 101vh;
+        overflow: hidden;
+        transform: translateY(-3vh);
+    }
+         
+     }
+</style>
+</head>
+<body>
+    <iframe id="principal" src="info3.html" name="info" title="Información 1"></iframe>
+    <strong style="font-size: 20px">Ultimas publicaciones</strong>
+
+<div class="contenedor">
+    <iframe id="cuadrados" src="info.html" name="info" title="Información 1"></iframe>
+    <iframe id="rectangulo" src="info2.html" name="info3" title="Información 2"></iframe>
+</div>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+            if(disclaimer) {
+                disclaimer.remove();
+            }
+        });
+    </script>
+</body>
+</html>

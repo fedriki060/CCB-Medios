@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+        <style>
+        div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"] {
+    /* Your styles here */
+    /* For example, change the background color */
+    height:0px;
+}
+img{
+    height:1px;
+}
+body {
+    overflow-y: hidden; /* Oculta el desplazamiento vertical */
+    height: 100vh; /* Establece la altura del cuerpo al 100% de la altura visible *
+    overflow-x: scroll; /* Esto muestra la barra de desplazamiento vertical */
+    scrollbar-width: none;
+}     
+body::-webkit-scrollbar {
+    display: none; /* Esto oculta la barra de desplazamiento en Chrome, Safari y Opera */
+}
+        
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Importar una imagen en HTML</title>
+</head>
+<body>
+    <img src="banner.jpg" alt="Descripción de la imagen" style="width:100%; height:auto;">
+</body>
+</html>

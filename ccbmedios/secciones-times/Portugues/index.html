@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CCB Medios</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="loguito.png" type="image/png">
+
+  <link rel="stylesheet" href="stylez1.css">
+   <style>   
+   div[style="text-align: right;position: fixed;z-index:9999999;bottom: 0;width: auto;right: 1%;cursor: pointer;line-height: 0;display:block !important;"] {
+    /* Your styles here */
+    /* For example, change the background color */
+    height:0px;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  overflow: hidden;
+}
+
+
+.iframe-content {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* Maintain a 16:9 aspect ratio (9 / 16 * 100) */
+  overflow: hidden;
+}
+
+iframe {
+  margin-top:5vh;
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  border-style: none;
+  overflow: hidden;
+}
+
+.modoBtn{
+  color: blue;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+
+.texto-superior{
+  font-size:20px;
+  font-family: Times New Roman;
+  color:black;
+  position: absolute;
+}
+
+.proyecto{
+  font-size:2em;
+  font-family: Times New Roman;
+  color:black;
+  position: absolute;
+  left: 18%;
+    margin-top: 2%;
+    text-decoration: none;
+
+}
+
+.redes-sociales{
+  font-size:2em;
+  font-family: Times New Roman;
+  color:black;
+  position: absolute;
+  left: 29%;
+  text-decoration: none;
+}
+
+
+.equipo{
+  font-size:2em;
+  font-family: Times New Roman;
+  color:black;
+  position: absolute;
+  left: 34%;
+    margin-top: 2%;
+    text-decoration: none;
+
+}
+
+
+
+.historia{
+  font-size:2em;
+  font-family: Times New Roman;
+  color:black;
+  position: absolute;
+  left: 49%;
+  margin-top: 2%;
+  text-decoration: none;
+}
+
+.contacto{
+  font-size:2em;
+  font-family: Times New Roman;
+  color:black;
+  position: absolute;
+  left: 65%;
+margin-top: 2%;
+text-decoration: none;
+
+}
+
+
+
+.logo {
+    position: absolute;
+    top: -2.5vh;
+    left: 1%;
+    max-width: 12%;
+    height: auto;
+    color: black;
+}
+
+
+.text{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+
+.sidebar {
+  background-color: green;
+  color: black;
+  width: 7%;
+  min-width: 120px;
+  padding: 2%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.3s ease-in-out; /* Transición para el cambio de ancho */
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transform: translateY(8vh) translateX(-8vh);
+}
+
+.sidebar-iframe {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /* Alinea el contenido a la derecha */
+}
+
+.sidebar-icons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 1%;
+  margin-top: 500px; /* Ajuste de espacio a la derecha */
+  transition: transform 0.3s ease-in-out; /* Transición para mover los íconos */
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  position: relative; 
+  left:40px/* Ancla el ítem para posicionar los textos relativamente */
+}
+
+.sidebar-text {
+    font-family: "Times New Roman";
+    display: none;
+    position: absolute;
+    left: -250px;
+    min-height: 20%;
+    transform: translateY(-40%);
+    font-size: 30px;
+    color: white;
+}
+
+.sidebar-bar{
+    height: 3px; /* Adjust the height as needed */
+    background-color: white;
+    position: fixed;
+    top: 11.8%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-40%);
+}
+
+
+.sidebar-text1 {
+  font-family: "Times New Roman";
+  display: none;
+  position: absolute; /* Posiciona los textos absolutamente */
+  left: -250px; /* Ajusta el espacio horizontal */
+  top: 50%;
+  transform: translateY(100%); /* Alinea verticalmente */
+  font-size: 30px;
+  color: white;
+}
+
+
+
+.sidebar img { 
+  height: auto;
+  margin-bottom: 60%;
+  transition: transform 0.3s ease-in-out; /* Transición para mover los íconos */
+}
+
+@media (min-width: 1000px) {
+.sidebar:hover .sidebar-icons {
+  transform: translateX(100%); /* Mueve los íconos hacia la derecha al pasar el ratón sobre la barra */
+}
+
+.sidebar:hover .sidebar-text {
+  display: block; /* Muestra el texto al pasar el ratón */
+}
+
+.sidebar:hover .sidebar-text1 {
+  display: block; /* Muestra el texto al pasar el ratón */
+}
+
+/* Cambio de ancho al pasar el ratón por encima */
+.sidebar:hover {
+  width: 30%;
+}
+
+.sidebar {
+    background-color: green;
+    color: black;
+    width: 7%;
+    min-width: 117px;
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    transition: width 0.3s ease-in-out;
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    transform: translateY(9vh) translateX(-6vh);
+}
+
+.sidebar img {
+    height: auto;
+    margin-bottom: 30%;
+    margin-right: -1vh;
+    transition: transform 0.3s ease-in-out;
+}
+
+ }
+
+.content {
+  flex: 1;
+  padding: 20px;
+  margin: 20px; /* Establece un margen de 20px en todos los lados */
+  padding: 10px; /* Añade un relleno de 10px al contenido dentro del contenedor */
+  margin-top: 100px;
+  color: black;
+  width: 50%;
+}
+
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  order: 2;
+}
+
+
+
+
+.sidebar-menubtn {
+    position: absolute;
+    left: 15%;
+    top: -80%;
+    transform: translateY(-50%);
+    font-size: 450%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+/* Estilos para la barra lateral en dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 999;
+    overflow-x: hidden;
+    transition: 0.5s;
+    order: 1;
+  }
+  
+  .iframe-content {
+    padding-bottom: 75%; /* Adjust the aspect ratio for smaller screens */
+
+}
+
+  .logo {
+    position: absolute; /* Establece la posición absoluta */
+    top: 20px; /* Sitúa la imagen en la parte superior */
+    left: 30px;
+    width: 150px;
+    height: auto; /* Sitúa la imagen en la izquierda */
+    color: black;
+    filter: brightness(0) invert(1);
+  
+  }
+
+  .sidebar.active {
+    width: 60%;
+  }
+  
+  .content {
+    transition: margin-right 0.5s;
+  }
+  .sidebar-text1{
+    display: block;
+  }
+  .sidebar-text{
+    display: block;
+  }
+
+  .proyecto{
+    font-size:20px;
+    font-family: Times New Roman;
+    color:black;
+    position: absolute;
+    left: 25%;
+  }
+  
+  .redes-sociales{
+    font-size:20px;
+    font-family: Times New Roman;
+    color:black;
+    position: absolute;
+    left: 40%;
+  }
+  
+  .equipo{
+    font-size:20px;
+    font-family: Times New Roman;
+    color:black;
+    position: absolute;
+    left: 60%;
+  }
+  
+  .historia{
+    font-size:20px;
+    font-family: Times New Roman;
+    color:black;
+    position: absolute;
+    left: 32%;
+    top: 4%
+    text-decoration: none;
+  }
+  
+  .contacto{
+    font-size:20px;
+    font-family: Times New Roman;
+    color:black;
+    position: absolute;
+    left: 50%;
+    top: 4%;
+  }
+
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    position: relative; 
+    left:50px/* Ancla el ítem para posicionar los textos relativamente */
+  }
+
+}
+
+
+.barra-superior {
+  background-color: black ; /* Color gris (puedes cambiar el código de color) */
+  height: 50px; /* Altura de la barra (ajusta según sea necesario) */
+  width: 100%; /* Ocupará todo el ancho de la página */
+  display: flex; /* Para alinear elementos */
+  justify-content: space-around; /* Distribuye los elementos a lo largo de la barra */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilos para el enlace */
+.enlace {
+  text-decoration: none; /* Quita el subrayado del enlace */
+  color: black; /* Color del texto del enlace (puedes cambiarlo) */
+  display: flex; /* Para alinear imagen y texto horizontalmente */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Estilos para la imagen dentro del enlace */
+.enlace img {
+  width: 30px; /* Ancho de la imagen (ajusta según el tamaño de tu imagen) */
+  margin-right: 5px; /* Espacio entre la imagen y el texto */
+}
+
+
+.barra{
+    height: 3px; /* Adjust the height as needed */
+    background-color: gray;
+    position: fixed;
+    top: 11.8%;
+    left: 0;
+    width: 100%;
+    
+}
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+  body {
+    zoom: 60%; /* Establece el nivel de zoom al 60% */
+  }
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 15px /* Ancla el item para posicionar los textos relativamente */;
+}
+.sidebar-menubtn {
+    position: absolute;
+    left: 15%;
+    top: -65%;
+    transform: translateY(-50%);
+    font-size: 450%;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+}
+</style>
+
+</head>
+<body style="background-color: white;">
+  
+
+  <div class="container">
+      <a  href="http://ccbmedios.great-site.net/ccbmedios/upbar/Proyecto/index.html" class = proyecto>Proyecto</a>
+      <a  href="http://ccbmedios.great-site.net/ccbmedios/upbar/Equipo/index.html" class = equipo>Equipo</a>
+      <a  href="http://ccbmedios.great-site.net/ccbmedios/upbar/Historia/index.html" class = historia>Historia</a>
+      <a  href="http://ccbmedios.great-site.net/ccbmedios/upbar/Peticiones/index.html" class = contacto>Peticiones</a>
+    
+    
+
+
+    
+<a href="http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/principal/index.html"><img src="/ccbmedios/iconos/logo.png" alt="Descripción de la imagen" class="logo"></a>    
+
+    <header>
+      </header>
+    <div class="barra"></div>
+
+    <div class="content">
+      <iframe style="overflow: hidden;" src="info.html" scrolling="auto"></iframe>
+    </div>
+    <div class="sidebar" id="sidebar">
+      <!-- Contenido de la barra lateral -->
+      <h2></h2>
+      <div class="sidebar-content">
+      <div class="sidebar-images">
+
+        <div class="sidebar-item">
+            <button class="sidebar-menubtn" onclick="toggleSidebar()">☰</button>
+            <a href="http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/CCBTV/index.html"><img src="/ccbmedios/iconos/TV.png" alt="Icono 1" width="100px"> </a>
+            <a href="http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/CCBTV/index.html" class="sidebar-text">CCB TV</a>
+          </div>
+        <div class="sidebar-item">
+           <a href="http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/Literatura/index.html"> <img src="/ccbmedios/iconos/Lteratura.png" alt="Imagen 2" width="100px"></a>
+            <a href="http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/Literatura/index.html"  class=sidebar-text>CCB Literatura</a>
+          </div>
+        <div class="sidebar-item">
+           <a href="http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/CCBTimes/index.html"> <img src="/ccbmedios/iconos/Podcast.png" alt="Imagen 4" width="90px" style=" filter: brightness(70%) contrast(10%);"></a>
+            <a href="http://ccbmedios.great-site.net/ccbmedios/sidebar/ccbmedios/CCBTimes/index.html" class="sidebar-text" style="color:#414040;">CCB Times</a>
+          </div>    
+          
+      </div>
+      </div>
+    </div>
+    </div>
+
+<div class="sidebar-item">
+              <div class="sidebar-bar"></div>
+    </div>
+
+  <script src="script.js"></script>
+
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+</script>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+            if(disclaimer) {
+                disclaimer.remove();
+            }
+        });
+    </script>
+</body>
+</html>

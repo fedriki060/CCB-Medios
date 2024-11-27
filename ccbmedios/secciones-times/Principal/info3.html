@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Gothic A1' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuadros con texto</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: white;
+            overflow-y: hidden;
+        }
+
+        #contenedor {
+            display: flex;
+            transform: translateX(-12vw);
+        }
+
+        .cuadro {
+            width: 25vw;
+            height: calc(32.5vh + 10px);
+            margin-right: 9vw;
+            margin-bottom: 16vh;
+            transform: translateY(15vh); /* Move images down by 5vh */
+            background-size: cover;
+            background-position: center;
+            cursor: pointer; /* Add cursor property here */
+        }
+
+        .linea-horizontal {
+        width: 25vw;
+        height: 2px;
+        transform: translateY(2.7vh);
+        background-color: gray;
+        margin-bottom: 1vh;
+    }
+
+        #cuadro-medio {
+            margin-right: 6vw;
+            margin-top: 5vh;
+            height: 50vh;
+            width: 38vw;
+            background-color: black;
+            background-image: url('ccbmedios/iconos/logo.png');
+            background-size: cover;
+            background-position: center;
+            transform: translate(-3vw,25vh); /* Move this image down by 15vh */
+            cursor: pointer; /* Add cursor property here */
+        }
+
+        #cuadro-medio::before {
+            content: '';
+            width: 31vw;
+            height: 2px;
+            background-color: gray;
+            position: absolute;
+            left: 0;
+            transform: translate(-0.5vw, -30vh);        
+        }
+
+        #cuadro-medio::after {
+            content: '';
+            width: 31vw;
+            height: 2px;
+            background-color: gray;
+            position: absolute;
+            left: 0;
+            transform: translate(4vw, 40vh);    
+        }
+
+        #rectangulo::before {
+            content: '';
+            height: 98vh;
+            width: 2px;
+            background-color: gray;
+            position: absolute;
+            left: 0;
+            transform: translate(-3vw, 0vh);
+        }
+
+        #rectangulo::after {
+            content: '';
+            height: 108vh;
+            width: 2px;
+            background-color: gray;
+            position: absolute;
+            left: 0;
+            transform: translate(-47vw, -30vh);
+        }
+
+        #rectangulo {
+            width: 20vw;
+            position: absolute;
+            height: 93vh;
+            background-color: gray;
+            transform: translate(75vw, 0vh);
+            margin-right: 0px;
+        }
+
+        #texto {
+            font-family: 'Gothic A1';
+            font-size: 15px;
+            margin-top: 5px;
+        }
+
+        h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .gray-line {
+    content: '';
+    height: 2px;
+    width: 100vw;
+    background-color: gray;
+    position: absolute;
+    left: 0;
+    transform: translate(1vw, 100.6vh);
+}
+
+ @media screen and (max-width: 1400px) {
+ 
+    #rectangulo::before {
+        content: '';
+        height: 98vh;
+        width: 2px;
+        background-color: gray;
+        position: absolute;
+        left: 0;
+        transform: translate(-3vw, 0vh);
+    }
+
+    #rectangulo::after {
+        content: '';
+        height: 97.9vh;
+        width: 2px;
+        background-color: gray;
+        position: absolute;
+        left: 0;
+        transform: translate(-47vw, -30vh);
+    }
+     
+ }
+ 
+
+
+    </style>
+</head>
+<body>
+<div id="contenedor">
+    <div>
+        <div onclick="window.top.location.href = 'http://ccbmedios.great-site.net/ccbmedios/secciones-times/Principal/Publicaciones/Como-darle-una-correcta-bienvenida-a-nuevos-gatos-en-nuestro-hogar.html';" class="cuadro" style="background-image: url('/ccbmedios/secciones-times/Principal/Publicaciones/imagenes-publicaciones/messi.png'); background-position: center -15px;">
+            <pre id="texto" style="transform: translate(1.5vw,-10vh); font-size: 2.5vh;">
+<strong style="font-size: 3vh">     Como Darle Una Correcta Bienvenida</strong>
+<strong style="font-size: 3vh">       A Nuevos Gatos En Nuestro Hogar</strong>
+                </pre>
+        </div>
+        <div class="linea-horizontal"></div> <!-- Linea horizontal -->
+        <div onclick="window.top.location.href = 'http://ccbmedios.great-site.net/ccbmedios/secciones-times/Literatura/publicaciones/una-roca-sobre-la-nieve-roja.html';" class="cuadro" style="background-image: url('/ccbmedios/secciones-times/Principal/Publicaciones/imagenes-publicaciones/roca-sobre-nieve-roja.png'); background-position: center -15px; transform: translateY(9.5vh);">
+            <pre id="texto" style="transform: translate(-1vw,-7vh); font-size: 2.5vh;">
+<strong style="font-size: 3vh; transform: translateY(5.5vh);">                 Una Roca Sobre La Nieve Roja</strong>
+                </pre>
+        </div>
+    </div>
+    <div onclick="window.top.location.href = 'http://ccbmedios.great-site.net/ccbmedios/secciones-times/Principal/Publicaciones/CCBMEDIOS-VUELVE.html';" id="cuadro-medio" class="cuadro" style="background-image: url('/ccbmedios/iconos/logo.png'); transform: translateY: 10vh;">
+        <pre id="texto" style="transform: translate(0vw,-20vh);">
+<center><h1 style="font-size: 30px;">CCBMEDIOS ... VUELVE</h1></center>
+
+            </pre>
+    </div>
+    <div id="rectangulo">
+        <h1 style="color: black;">
+            <center style="font-size:50px; transform: translateY(37vh);">Semana 23</center>
+        </h1>
+        <h1 style="color: black;">
+            <center style="font-size:25px; transform: translateY(37vh);">Ciclo 13</center>
+        </h1>
+        <pre id="texto" style="transform: translate(-3vw,0vh);">
+
+        </pre>
+    </div>
+     <div class="gray-line"></div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        var disclaimer = document.querySelector("img[alt='www.000webhost.com']");
+        if(disclaimer) {
+            disclaimer.remove();
+        }
+    });
+</script>
+</body>
+</html>
